@@ -3,6 +3,8 @@ Page({
     id: '',
     listName: '',
     menuList: '',
+    defaultTitle: '',
+    defaultContent: '',
     title: '',
     content: ''
   },
@@ -47,6 +49,13 @@ Page({
   reset() {
     // 表单重置事件
   },
+  resetHandle() {
+    const { defaultTitle, defaultContent } = this.data
+    this.data.setData({
+      title: defaultTitle,
+      content: defaultContent
+    })
+  },
   randomId() {
     // 随机生成id
     return Math.random().toString().substr(-7)
@@ -56,11 +65,13 @@ Page({
 
     if (tagName === 'input') {
       this.setData({
-        title: value
+        title: value,
+        defaultTitle: value
       })
     } else {
       this.setData({
-        content: value
+        content: value,
+        defaultContent: value
       })
     }
     return false;

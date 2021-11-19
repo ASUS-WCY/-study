@@ -3,7 +3,7 @@
     <view class="title">
       <text>title</text>
       <view class="line"></view>
-      <input placeholder="Please write the title" value="{{title}}" onInput="inputHandler"/>
+      <input placeholder="Please write the title" value="{{title}}" onInput="inputHandler" />
     </view>
     <view class="content">
       <text>content</text>
@@ -11,8 +11,8 @@
       <textarea placeholder="write down something" value="{{content}}" onInput="inputHandler" maxlength="-1"></textarea>
     </view>
     <view class="btns">
-      <button size="default" form-type="submit">add matter</button>
-      <button size="default" form-type="reset">clear input</button>
+      <button size="default" form-type="submit">Add Matter</button>
+      <button size="default" form-type="reset" onTap="resetHandle">Reset Input</button>
     </view>
   </form>
 </view>
