@@ -1,63 +1,11 @@
 {
   "pages": [
     "pages/menuList/menuList",
-    "pages/addMatters/addMatters",
-    
-    
-    "pages/lifeCircle/lifeCircle",
-    "pages/calculator/calculator",
-    "pages/keyboard/keyboard",
-    "pages/bluetooth/bluetooth",
-    "pages/index/index",
-    "pages/tempForm/tempForm",
-    "pages/chooseCity/chooseCity",
-    "pages/imgPage/imgPage",
-    "pages/location/location",
-    "pages/animation/animation",
-    "pages/webview/webview",
-    "pages/network/network",
-    "pages/lock/lock",
-    "pages/media/media",
-    "pages/navigator/navigator",
-    "pages/form/form",
-    "pages/basic/basic",
-    "pages/movable/movable",
-    "pages/temp/temp",
-    "pages/swiper/swiper",
-    "pages/scroll/scroll",
-    "pages/cover-view/cover-view",
-    "pages/keyboard/keyboard"
+    "pages/addMatters/addMatters"
   ],
   "window": {
     "defaultTitle": "My App",
     "pullRefresh": true,
     "titleBarColor": "#2e2e2e"
-  },
-  "tabBar": {
-    "textColor": "#ddd",
-    "selectedColor": "#108ee9",
-    "backgroundColor": "#fff",
-    "items": [
-      {
-        "pagePath": "pages/index/index",
-        "name": "首页"
-      },
-      {
-        "pagePath": "pages/animation/animation",
-        "name": "动画效果"
-      },
-      {
-        "pagePath": "pages/lifeCircle/lifeCircle",
-        "name": "声命周期"
-      },
-      {
-        "pagePath": "pages/bluetooth/bluetooth",
-        "name": "蓝牙"
-      },
-      {
-        "pagePath": "pages/chooseCity/chooseCity",
-        "name": "选择城市"
-      }
-    ]
   }
 }

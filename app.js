@@ -13,29 +13,5 @@ App({
   onShow(options) {
     // 从后台被 scheme 重新打开
     // options.query == {number:1}
-    const path = getCurrentPages()[getCurrentPages().length - 1].route
-    const arr = [
-      "pages/index/index",
-      "pages/lifeCircle/lifeCircle",
-      "pages/bluetooth/bluetooth",
-      "pages/webview/webview"]
-    if (arr.indexOf(path) !== -1) {
-      my.setTabBarBadge({
-        index: 2,
-        text: '50'
-      })
-      my.setTabBarItem({
-        index: 0,
-        text: 'text',
-        iconPath: '/img/1.jpg',
-        selectedIconPath: 'img/2.jpg'
-      })
-      my.setTabBarStyle({
-        color: '#333',
-        selectedColor: '#108ee9',
-        backgroundColor: '#fff',
-        borderStyle: '#f00',
-      });
-    }
   },
 });
