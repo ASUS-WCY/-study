@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ant-mini-lock": "^1.0.0",
+    "mini-ali-ui": "^1.4.1"
+  }
+}

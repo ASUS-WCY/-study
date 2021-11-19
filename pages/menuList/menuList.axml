@@ -1,0 +1,4 @@
+<!-- 向自定义组件传递函数时需要以 on 开头 否则会被识别为字符串 -->
+<pagenation data="{{done}}" onDelete="deleteItem" title="done" onCheckedChange="checkedChange"/>
+<pagenation data="{{undone}}" onDelete="deleteItem" title="undone" onCheckedChange="checkedChange"/>
+<button size="default" id="addBtn" onTap="addMatters">Add Matters</button>

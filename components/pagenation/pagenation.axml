@@ -1,0 +1,14 @@
+<view class="pagenation">
+  <text>{{title}}</text>
+  <view class="list">
+    <checkbox-group class="checkBoxGroup" name="{{title}}">
+      <view class="item" a:for="{{data}}" key="{{item.id}}" a:key="{{item.id}}" onTap="showMatter" id="{{item.id}}">
+        <text number-of-lines="1">{{item.title}}</text>
+        <view class="button" catchTap>
+          <checkbox value="{{item.title}}" checked="{{item.done}}" data-id="{{item.id}}" onChange="isChecked" />
+          <button class="btn" data-id="{{item.id}}" onTap="clickHandler">DEL</button>
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+</view>

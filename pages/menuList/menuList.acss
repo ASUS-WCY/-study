@@ -1,0 +1,46 @@
+page {
+  padding: 10px;
+}
+
+/* .pagenation {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin: 5px 0 5px 8px;
+}
+
+*/
+
+#addBtn {
+  color: #108ee9;
+  border: 1px solid #108ee9;
+  background-color: transparent;
+}
+
+#addBtn:hover {
+  background-color: #fff;
+}
+
+#addBtn:active {
+  color: #fff;
+  background-color: #108ee9;
+} 
