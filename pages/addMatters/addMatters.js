@@ -51,10 +51,12 @@ Page({
   },
   resetHandle() {
     const { defaultTitle, defaultContent } = this.data
-    this.data.setData({
+    this.setData({
       title: defaultTitle,
       content: defaultContent
     })
+    console.log(this.data);
+
   },
   randomId() {
     // 随机生成id
@@ -65,13 +67,11 @@ Page({
 
     if (tagName === 'input') {
       this.setData({
-        title: value,
-        defaultTitle: value
+        title: value
       })
     } else {
       this.setData({
-        content: value,
-        defaultContent: value
+        content: value
       })
     }
     return false;
@@ -95,7 +95,9 @@ Page({
       this.setData({
         id,
         title: arr[0].title,
-        content: arr[0].content
+        content: arr[0].content,
+        defaultTitle: arr[0].title,
+        defaultContent: arr[0].content,
       })
     }
   },
