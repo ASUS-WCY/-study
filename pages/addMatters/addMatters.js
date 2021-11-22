@@ -37,7 +37,7 @@ Page({
         });
       }
       my.redirectTo({
-        url: '/pages/menuList/menuList'
+        url: '/pages/menuList/menuList?name="张三"&age=18'
       });
     } else {
       my.showToast({

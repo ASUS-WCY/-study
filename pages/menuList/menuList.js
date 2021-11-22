@@ -67,7 +67,9 @@ Page({
       url: '/pages/addMatters/addMatters'
     });
   },
-  onLoad() {
+  onLoad(options) {
     this.getMenuList()
+    console.log(options);
+    
   },
 });
